@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>furniture</title>
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+    <!-- header stars -->
+    <header class="back-lkh">
+        <div class="logo">
+            <a href="#"><span class="fas fa-fire"></span>HKR<span>S</span></a>
+        </div>
+        <nav>
+            <a href="main.html" class="nav_head ">home</a>
+            <div class="pro">
+                <a href="#cate" class="nav_head active">category</a>
+                <ul class="back-lkh">
+                    <li><a href="demo4.html" target="_blank">man_wear</a></li>
+                    <li><a href="demo8.html" target="_blank">woman_wear</a></li>
+                    <li><a href="#" target="_blank">kid_wear</a></li>
+                    <li><a href="demo7.html" target="_blank">accessories</a></li>
+                    <li><a href="demo1.html" target="_blank">shoeses</a></li>
+                    <li><a href="demo3.html" target="_blank">furniture</a></li>
+                    <li><a href="#" target="_blank">electronics</a></li>
+                    <li><a href="demo2.html" target="_blank">books</a></li>
+                    <li><a href="#" target="_blank">Appliances</a></li>
+                    <li><a href="demo6.html" target="_blank">kitchen-tools</a></li>
+                    <li><a href="demo5.html" target="_blank">Detergents</a></li>
+                </ul>
+            </div>
+            <a href="contact.html" class="nav_head ">contact us</a>
+            <a href="#blog" class="nav_head ">blog</a>
+        </nav>
+        <div class="icons">
+            <i class="fa-solid fa-search" id="search_btn"></i>
+            <div class="user">
+                <i class="fa-regular fa-user"></i>
+                <div class="account back-lkh">
+                    <h4>access your account</h4>
+                    <button><a href="#" target="_blank">sign up</a></button>
+                    <button><a href='register.html' target="_blank">log in</a></button>
+                </div>
+            </div>
+            <i class="fa-regular fa-heart"><a href="#"></a></i>
+            <i class="fa-solid fa-cart-shopping"><a href="#"></a></i>
+        </div>
+        <form action="" class="search"> 
+            <input type="search" placeholder="search here..." class="search_box">
+            <label for="search" class="fa-solid fa-search" ></label>
+        </form>
+    </header>
+    <!-- header end -->
+
+    <!-- background stars -->
+    <div class="back" style="background-image: url('image1/back_r.jpg');">
+        <h2>beauty furniture</h2>
+    </div>
+<!-- background end -->
+<!-- toggle secyioin stars -->
+    <div class="sec_toggle back-lkh">
+        <div class="back_toggle">
+            <div>
+                <span class="toggle" style="background-color:aliceblue" id="light"></span>
+                <h4>light</h4>
+            </div>
+            <div>
+                <span class="toggle " style="background-color:rgb(6, 6, 6)" id="dark"></span>
+                <h4>dark</h4>
+            </div>
+        </div>
+        <div class="color_toggle">
+            <div>
+                <span class="toggle" style="background-color:rgb(255, 153, 2)" id="main_color"></span>
+                <h4>main-color</h4>
+            </div>
+            <div>
+                <span class="toggle " style="background-color:rgb(79, 215, 253)" id="away_color"></span>
+                <h4>away-color</h4>
+            </div>
+        </div>
+    </div>
+<!-- toggle secyioin end -->
+    
+    <section>
+        <!-- sidebar satrs -->
+        <div class="sidebar back-lkh">
+            <div class="sidebar_content">
+                <h2 class="title"><b>Cart</b></h2>
+                <p class="text">No products in the cart...</p>
+                <div>&nbsp;</div>
+                <h2 class="title"><b>Categories</b></h2>
+                <p class="list" data-filter="living" ><a href="#" style="font-size:20px;color:rgb(11, 4, 51);">living rooms</a></p>
+                <p class="list" data-filter="kid" ><a href="#" style="font-size:20px;color:rgb(4, 4, 50);">kid rooms </a></p>
+                <p class="list" data-filter="bedrooms" ><a href="#" style="font-size:20px;color:rgb(2, 2, 39);">bedrooms</a></p>
+                <p class="list" data-filter="kitchen" ><a href="#" style="font-size:20px;color:rgb(4, 4, 43);">kitchen</a></p>
+                <div>&nbsp;</div>
+                <h2 class="title"><b>Filters</b></h2>
+                <div>
+                    <form action="" class="search"> 
+                        <input type="search" placeholder="search here..." class="search_box">
+                        <label for="search" class="fa-solid fa-search" ></label>
+                    </form>
+                    <div class="price">
+                        <label for="num">price</label>
+                        <input id="num" type="number" name="number" min="130" max="5000" step="2" />
+                    </div>
+                </div>
+                <div>&nbsp;</div>
+                <h2 class="title"><b>Tags</b></h2>
+                <div class="tags">
+                    <b>#accessory</b>,<b>#arabica</b> 
+                    <b>#candy</b>,<b> #cup</b> ,<b> #bean,</b>
+                    <b>#ethopian</b>,<b>#latte</b> 
+                </div>
+            </div>
+        </div>
+        <!-- sidebar end -->
+        <!-- content satrs  -->
+        <div class="content">
+            <!-- heading stars -->
+            <div class="heading back-lkh">
+                <div class="pic">
+                    <ul>
+                        <li data-filter="all"  class="list">
+                            <div class="box">
+                                <a href="#">
+                                <div class="name">
+                                    <a href="#">all</a>
+                                </div>
+                                <div class="image">
+                                    <img src="image1/all_r.jpg">
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+
+
+                        <li data-filter="living" class="list">
+                            <div class="box">
+                                <a href="#">
+                                <div class="name">
+                                    <a href="#">living</a>
+                                </div>
+                                <div class="image">
+                                    <img src="image1/back_r.jpg">
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+
+
+                        <li data-filter="kid" class="list">
+                            <div class="box">
+                                <a href="#">
+                                <div class="name">
+                                    <a href="#">kid</a>
+                                </div>
+                                <div class="image">
+                                    <img src="image1/kid_r.jpg">
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li data-filter="bedrooms" class="list">
+                            <div class="box">
+                                <a href="#">
+                                <div class="name">
+                                    <a href="#">bedrooms</a>
+                                </div>
+                                <div class="image">
+                                    <img src="image1/bed_r.jpg">
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li data-filter="kitchen" class="list">
+                            <div class="box">
+                                <a href="#">
+                                <div class="name">
+                                    <a href="#">kitchen</a>
+                                </div>
+                                <div class="image">
+                                    <img src="image1/kit_r.jpg">
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <!-- heading end -->
+            <div class="container_content">
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image"style="transform:skewY(0deg);">
+                        <img src="image1/bedroom1.jpg"style="transform:skewY(0deg);">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>bedrooms</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+                
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image"style="transform:skewY(0deg);">
+                        <img src="image1/kid1_r.jpg" style="transform:skewY(0deg);">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>kid</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image"style="transform:skewY(0deg);">
+                        <img src="image1/liv1_r.jpg" style="transform:skewY(0deg);">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>living</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image"style="transform:skewY(0deg);">
+                        <img src="image1/kit1_r.jpg" style="transform:skewY(0deg);">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>kitchen</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image"style="transform:skewY(0deg);">
+                        <img src="image1/bedroom2 (2).jpg" style="transform:skewY(0deg);">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>bedrooms</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image"style="transform:skewY(0deg);">
+                        <img src="image1/liv2_r.jpg" style="transform:skewY(0deg);">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>living</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+
+                
+                
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image"style="transform:skewY(0deg);">
+                        <img src="image1/kid3_r.jpg" style="transform:skewY(0deg);">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>kid</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image"style="transform:skewY(0deg);">
+                        <img src="image1/kit3_r.jpg" style="transform:skewY(0deg);">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>kitchen</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+
+                
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image"style="transform:skewY(0deg);">
+                        <img src="image1/bedroom4.jpg" style="transform:skewY(0deg);">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>bedrooms</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+                
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image"style="transform:skewY(0deg);">
+                        <img src="image1/kit4_r.jpg" style="transform:skewY(0deg);">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>kitchen</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+                
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image"style="transform:skewY(0deg);">
+                        <img src="image1/liv4_r.jpg" style="transform:skewY(0deg);">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>living</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image"style="transform:skewY(0deg);">
+                        <img src="image1/kid2_r.jpg" style="transform:skewY(0deg);">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>kid</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image"style="transform:skewY(0deg);">
+                        <img src="image1/kit2_r.jpg" style="transform:skewY(0deg);">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>kitchen</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+
+
+                
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image"style="transform:skewY(0deg);">
+                        <img src="image1/liv3_r.jpg" style="transform:skewY(0deg);">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>living</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image"style="transform:skewY(0deg);">
+                        <img src="image1/bedroom3.jpg" style="transform:skewY(0deg);">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>bedrooms</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+                
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image"style="transform:skewY(0deg);">
+                        <img src="image1/kid4_r.jpg" style="transform:skewY(0deg);">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>kid</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- content end  -->
+    </section>
+    <footer class="back-lkh">
+        <div class="container">
+            <div class="box">
+                <h3>home</h3>
+                <ul>
+                    <li><a href="#">category</a></li>
+                    <li><a href="#">contact us</a></li>
+                    <li><a href="#">blogs</a></li>
+                    <li><a href="#">account</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>category</h3>
+                <ul>
+                    <li><a href="#">man-wear</a></li>
+                    <li><a href="#">woman-wear</a></li>
+                    <li><a href="#">kid-wear</a></li>
+                    <li><a href="#">accessories</a></li>
+                    <li><a href="#">shoeses</a></li>
+                    <li><a href="#">furniture</a></li>
+                    <li><a href="#">electronics</a></li>
+                    <li><a href="#">books</a></li>
+                    <li><a href="#">Appliances</a></li>
+                    <li><a href="#">kitchen-tools</a></li>
+                    <li><a href="#">Detergents</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>contact us</h3>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-phone"></i>support</a></li>
+                    <li><a href="#"><i class="fa-solid fa-pen-to-square"></i>feedback</a></li>
+                    <li><a href="#"><i class="fa-solid fa-location-dot"></i>address</a></li>
+                    
+                </ul>
+            </div>
+            <div class="box">
+                <h3>account</h3>
+                <ul>
+                    <li><a href="#"><i class="fa-regular fa-heart"></i>wishlist</a></li>
+                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i>orders</a></li>
+                </ul>
+            </div>
+            <div class="icons">
+                <h4>contact us with...</h4>
+                <div class="brands">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-telegram"></i>
+            </div>
+            <h5>Example@example.com</h5>
+            <h5 style="text-decoration:underline;color:blue;">+20023040559</h5>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="js/demo.js"></script>
+</body>
+</html>
