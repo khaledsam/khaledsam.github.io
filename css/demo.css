@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@1,700&family=Permanent+Marker&family=Square+Peg&family=Tapestry&family=Ubuntu&display=swap');
+
+:root{
+    --lightColor:rgb(212, 248, 251);
+    --spanColor1:#ff9f1a;
+    --spanColor2:rgb(4, 163, 255);
+    --brightColor:rgb(30, 28, 51);
+    --black:#1b1b22;
+    --boxShadow:2px 2px 2px rgb(0,0,0,0.3),0 -2px 2px rgb(0,0,0,0.3);
+}
+*{
+    font-family: 'Ubuntu', sans-serif;
+    margin:0;padding:0;
+    box-sizing:border-box;
+    outline:none;border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .4s ease;
+}
+html{
+    
+    scroll-padding-top:5rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width:.1rem;
+}
+html::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background-color:var(--spanColor2);
+}
+
+/* header stars */
+header{
+    position:fixed;
+    left:0;right:0;top:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:.5rem;
+    box-shadow:var(--boxShadow);
+    background-color:var(--lightColor);
+    z-index: 222;
+}
+header .logo a{
+    font-size:44px;color:var(--brightColor);
+    margin-left:2.5rem;
+}
+header .logo a span{
+    color:var(--spanColor1);
+}
+header nav a{
+    font-size:24px;
+    color:#1b1b22;
+    margin:.4rem 1rem;
+    padding:.5rem;
+}
+header nav a:hover , header nav .nav_head.active{
+    color: var(--spanColor2);
+}
+header .pro{
+    display:inline-block;
+    position: relative;
+    
+}
+header .pro ul{
+    position:absolute;
+    top:115%;left:50%;
+    list-style: none;
+    padding:.8rem .2rem;
+    background-color:var(--lightColor);
+    display: none;
+    transition:all .5s ease;
+    
+}
+header .pro:hover ul{
+    display: block;
+}
+header .pro ul li{
+    padding:.7rem;
+}
+header .pro ul li:hover{
+    background-color:var(--spanColor2);
+}
+header .pro ul li a{
+    font-size: 19px;color:#1b1b22;
+}
+header .pro ul li a:hover{
+    color:var(--spanColor1);
+}
+header .icons i{
+    font-size:22px;color:#1b1b22;
+    margin:.2rem .5rem;
+    padding:.5rem;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+header .icons i:hover{
+    border-bottom: 2px solid var(--black);
+    background-color: rgb(199, 229, 255);
+}
+header .icons .user{
+    display:inline-flex;
+    flex-direction: column;
+    width:fit-content;
+    position:relative;
+}
+header .icons .user .account{
+    position:absolute;
+    top:145%;
+    left:-9rem;
+    margin-left:50%;
+    width:18rem;
+    background-color: var(--lightColor);
+    display: none;
+    padding:.8rem;
+    text-align: center;
+    transition: .6s;
+}
+header  .icons .user .account::before{
+    content: "";
+    border-bottom: 10px solid var(--lightColor);
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position:absolute;
+    top:-20px;left:50%;
+    margin-left:-10px;
+}
+header .icons .user .account button{
+    display:inline-block;
+    font-size:20px;padding:.6rem;
+    background-image:linear-gradient(to right,var(--spanColor2),rgb(105, 217, 245));
+    border-radius: 5px;
+    overflow: hidden;
+    margin:.4rem 1.2rem;
+    color:var(--brightColor);
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+header .icons .user:hover .account{
+    display: block; z-index: 223;  
+}
+header .search{
+    position:absolute;
+    top:calc(100% + 20px);
+    right:-35rem;
+    width:30rem;
+    height:2.3rem;
+    display:flex;
+    background-color:var(--lightColor);
+    border: 2px solid rgb(37, 49, 157);
+}
+header .search .search_box{
+    background-color: transparent;
+    width:100%;height:100%;
+    padding:.4rem;
+    font-size: 20px;
+}
+header .search label{
+    background-image:linear-gradient(to right,var(--spanColor2),rgb(105, 217, 245));
+    width:5rem;height:100%;
+    padding:.4rem;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+header .search.active{
+    right:3%;transition: .5s;
+}
+/* header end */
+/* background stars */
+.back{
+    
+    background-size: cover;
+    background-position: center;
+    width:100%;height:20rem;
+    padding: 9rem 5rem ;
+}
+.back h2{
+    font-size:50px;
+    color:var(--spanColor1);
+}
+/* background end */
+section{
+    display:grid;
+    grid-template-areas: "si si  co co co co co co co co ";
+    grid-template-columns: min-content;
+    margin:2.5rem 3rem;
+}
+/* sidebare stars */
+.sidebar{
+    width:20rem;
+    display:grid ;
+    grid-area: si;
+    background-color: var(--lightColor);
+    padding:1.2rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--boxShadow);
+    height: fit-content;
+}
+.sidebar .sidebar_content{
+    padding-top:.8rem;
+}
+.sidebar .sidebar_content .title{
+    width:100%;
+    margin-bottom:.8rem;
+    color:rgb(7, 21, 84);
+}
+.sidebar .sidebar_content p ,
+.sidebar .sidebar_content div {
+    padding:.4rem ;
+    margin:.3rem auto;
+    padding-left:1.4rem;
+    font-size: 20px;
+}
+.sidebar .sidebar_content p a{
+    font-size: 19px;color:#1b1b22;
+}
+.sidebar .sidebar_content p:hover{
+    background-color: var(--spanColor2);
+}
+.sidebar .sidebar_content div .search{
+    width:15rem;height:2.3rem;
+    border:1px solid black;
+    margin:.1rem auto .2rem;
+    display:flex;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.sidebar .sidebar_content div .search .search_box{
+    width:100%;height:100%;
+    background-color: transparent;
+    padding:.6rem;
+}
+.sidebar .sidebar_content div .search label{
+    width:2rem;height:100%;
+    padding:.5rem;
+    box-sizing: content-box;
+    background-color:var(--spanColor2);
+    cursor: pointer;
+}
+.sidebar .sidebar_content .price input{
+    width:4rem;
+    padding:.4rem .2rem;
+    border-radius: 5px;
+    overflow: hidden;
+    border:1px solid black;
+    box-sizing: content-box;
+    background-color:rgb(183, 255, 255);
+}
+/* sidebare end */
+/* contaent stars */
+.content{
+    grid-area: co;
+    padding:.5rem .5rem;
+}
+/* heading stars */
+    .heading{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:.7rem;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: var(--boxShadow);
+        background-color: var(--lightColor);
+        margin-bottom: 3rem;
+        width:fit-content;
+        margin: auto auto 3.2rem;
+    }
+    .heading .pic ul{
+        display:flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+    .heading .pic ul li{
+        margin-right:.8rem;
+    }
+    .heading .pic .box{
+        width:5.6rem;
+        position:relative;
+        border-radius: 5px;
+        box-shadow: var(--boxShadow);
+        overflow: hidden;
+        
+        cursor: pointer;
+    }
+    .heading .pic .box .name{
+        position:absolute;
+        top:30%;
+        width:100%;
+        padding:.2rem 0;
+        background-color:#a6eafaa5;
+        text-align:center;
+        z-index: 22;
+    }
+    .heading .pic .box .name a{
+        font-size:20px;color:var(--spanColor1);
+    }
+    .heading .pic .box .name a:hover{
+        color:var(--spanColor2);
+    }
+    .heading .pic .box .image{
+        height:5.6rem;width:100%;
+        overflow:hidden;
+    }
+    .heading .pic .box .image img{
+        width:100%;height:100%;
+        object-fit: cover;
+    }
+    .heading .pic .box .image:hover img{
+        transform: scale(1.13);
+    }
+    /* content container stars */
+    .container_content{
+        padding:.5rem 1rem;
+        display:flex;
+        justify-content:space-around;
+        flex-wrap:wrap;
+    }
+    .container_content .box_container{
+        width:18rem;height:26rem;
+        position:relative;
+        padding:.3rem;
+        margin:60px .7rem;
+        border-radius:7px;
+        box-shadow: 0 2px 2px  rgba(0, 0, 0, 0.493);
+    }
+    .container_content .box_container .image{
+        width:14rem;height:16rem;
+        border-radius:7px;
+        box-shadow: var(--boxShadow);
+        position:absolute;
+        bottom:45%;right:0;
+        background-color:aliceblue;
+        padding:1.7rem;
+    }
+    .container_content .box_container .image img{
+        width:85%;height:85%;
+        
+        z-index: 1;
+        object-fit: cover;
+    }
+    .container_content .box_container .details{
+        width:100%;height:100%;
+    }
+    .container_content .box_container .details .icons{
+        display:flex;width:fit-content;
+        height:55%;
+        flex-direction: column;
+        margin:.3rem;
+    }
+    .container_content .box_container .details .icons i{
+        font-size: 20px ;
+        padding:.6rem;
+        background-color:aliceblue;
+        margin:.7rem 0;
+        border-radius: 50%;cursor: pointer;
+    }
+    .container_content .box_container .details .icons i:hover{
+        color: var(--spanColor1);
+    }
+    .container_content .box_container .details h3 , .container_content .box_container .details strong{
+        font-size: 24px;
+        margin:.5rem;color:var(--spanColor1);
+    }
+    .container_content .box_container .details button{
+        padding:.6rem;font-size: 20px;
+        margin: auto 5rem;
+        background-color:aliceblue;
+        cursor: pointer;
+        border-radius: 7px;
+    }
+    .container_content .box_container .details button:hover{
+        background-color: var(--spanColor1);
+    }
+/* contaent ontainer end */
+/* contaent  end */
+/* footer  stars */
+footer{
+    width:100%;
+    border-top:3px solid var(--black);
+    padding:1.4rem 3rem 3rem 4rem;
+    background-color: var(--lightColor);
+}
+footer .container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    width:100%;
+}
+footer .container h3{
+    font-size:23px;
+    color:var(--spanColor1);
+}
+footer .container ul{
+    list-style: none;
+    padding:.5rem;
+    
+    padding-left:1.2rem;
+}
+footer .container ul li{
+    padding:.2rem;
+    
+}
+footer .container ul li:hover{
+    background-color: #dedbfe;
+}
+footer .container ul li a{
+font-size: 14px;color:var(--black);
+}
+footer .container ul li a i{
+    padding-right:.3rem;
+}
+footer .container .icons{
+    padding:3rem;
+}
+footer .container .icons h4{
+    font-size: 19px;
+}
+footer .container .icons .brands{
+    margin:2rem auto .7rem 1rem;
+}
+footer .container .icons .brands i{
+    font-size: 23px;
+    margin:.4rem .4rem;
+}
+footer .container .icons .brands i:hover{
+    color:var(--spanColor1);transition: .4s ease;
+}
+footer .container .icons h5{
+    margin-left:2rem;
+}
+/* footer  end */
+
+body.is_dark{
+    background-color: #1b1b22;
+}
+body.is_dark .back-lkh,
+.header.is_dark,
+.header.is_dark .pro ul,
+header.is_dark .icons .user .account{
+    background-color:rgb(119, 119, 119);
+}
+body.is_dark header nav a,
+body.is_dark header .logo a,
+body.is_dark  i:not(.details .icons i),
+body.is_dark header .icon i,
+body.is_dark  b,
+body.is_dark  label,
+body.is_dark h4,
+body.is_dark  p{
+    color: aliceblue;
+}
+

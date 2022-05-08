@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shoes</title>
+    <!-- css style -->
+    <link rel="stylesheet" href="css/demo.css">
+    <!-- icons style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css">
+</head>
+<body>
+    <!-- header stars -->
+    <header class="header back-lkh">
+        <div class="logo">
+            <a href="index.html"><span class="fas fa-fire"></span>HKR<span>S</span></a>
+        </div>
+        <nav>
+            <a href="index.html" class="nav_head active">home</a>
+            <div class="pro">
+                <a href="#cate" class="nav_head ">category</a>
+                <ul>
+                    <li><a href="demo4.html" target="_blank">man_wear</a></li>
+                    <li><a href="demo8.html" target="_blank">woman_wear</a></li>
+                    <li><a href="demo10.html" target="_blank">kid_wear</a></li>
+                    <li><a href="demo7.html" target="_blank">accessories</a></li>
+                    <li><a href="demo1.html" target="_blank">shoeses</a></li>
+                    <li><a href="demo3.html" target="_blank">furniture</a></li>
+                    <li><a href="demo11.html" target="_blank">labtops</a></li>
+                    <li><a href="demo12.html" target="_blank">mobiles</a></li>
+                    <li><a href="demo2.html" target="_blank">books</a></li>
+                    <li><a href="demo9.html" target="_blank">Appliances</a></li>
+                    <li><a href="demo6.html" target="_blank">kitchen-tools</a></li>
+                    <li><a href="demo5.html" target="_blank">Detergents</a></li>
+                </ul>
+            </div>
+            <a href="contact.html" class="nav_head " target="_blank" >contact us</a>
+            <a href="#blog" class="nav_head " >blog</a>
+        </nav>
+        <div class="icons">
+            <i class="fa-solid fa-moon" id="btn_toggle"></i>
+            <i class="fa-solid fa-search" id="search_btn"></i>
+            <div class="user">
+                <i class="fa-regular fa-user"></i>
+                <div class="account">
+                        <h4>access your account</h4>
+                        <button><a href="sign.html" target="_blank">sign up</a></button>
+                        <button><a href='register.html' target="_blank">log in</a></button>
+                </div>
+            </div>
+            <i class="fa-regular fa-heart"><a href="card.html"></a></i>
+            <i class="fa-solid fa-cart-shopping"><a href="card.html"></a></i>
+        </div>
+        <form action="" class="search"> 
+            <input type="search" placeholder="search here..." class="search_box">
+            <label for="search" class="fa-solid fa-search" ></label>
+        </form>
+    </header>
+    <!-- header end -->
+
+    <!-- background stars -->
+    <div class="back" style="background-image: url('image1/back_s.jpg');">
+        <h2> awsome shoeses</h2>
+    </div>
+<!-- background end --> 
+    <section>
+        <!-- sidebar satrs -->
+        <div class="sidebar back-lkh">
+            <div class="sidebar_content">
+                <h2 class="title"><b>Categories</b></h2>
+                <p class="list" data-filter="man" ><a href="#" style="font-size:20px;color:rgb(11, 4, 51);">man</a></p>
+                <p class="list" data-filter="children" ><a href="#" style="font-size:20px;color:rgb(4, 4, 50);">children</a></p>
+                <p class="list" data-filter="sundle" ><a href="#" style="font-size:20px;color:rgb(2, 2, 39);">sundle</a></p>
+                <p class="list" data-filter="woman" ><a href="#" style="font-size:20px;color:rgb(4, 4, 43);">woman</a></p>
+                <p class="list" data-filter="sport" ><a href="#" style="font-size:20px;color:rgb(4, 4, 43);">sport</a></p>
+                <div>&nbsp;</div>
+                <h2 class="title"><b>Filters</b></h2>
+                <div>
+                    <form action="" class="search"> 
+                        <input type="search" placeholder="search here..." class="search_box">
+                        <label for="search" class="fa-solid fa-search" ></label>
+                    </form>
+                    <div class="price">
+                        <label for="num">price</label>
+                        <input id="num" type="number" name="number" min="130" max="5000" step="2" />
+                    </div>
+                </div>
+                <div>&nbsp;</div>
+            </div>
+        </div>
+        <!-- sidebar end -->
+        <!-- content satrs  -->
+        <div class="content">
+            <!-- heading stars -->
+            <div class="heading back-lkh">
+                <div class="pic">
+                    <ul>
+                        <li data-filter="all"  class="list">
+                            <div class="box">
+                                <a href="#">
+                                <div class="name">
+                                    <a href="#">all</a>
+                                </div>
+                                <div class="image">
+                                    <img src="image1/all.jpg">
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li data-filter="man" class="list">
+                            <div class="box">
+                                <a href="#">
+                                <div class="name">
+                                    <a href="#">man</a>
+                                </div>
+                                <div class="image">
+                                    <img src="image1/man_s.jpg">
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li data-filter="sundle" class="list">
+                            <div class="box">
+                                <a href="#">
+                                <div class="name">
+                                    <a href="#">sundle</a>
+                                </div>
+                                <div class="image">
+                                    <img src="image1/sundle_s.jpg">
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li data-filter="woman" class="list">
+                            <div class="box">
+                                <a href="#">
+                                <div class="name">
+                                    <a href="#">woman</a>
+                                </div>
+                                <div class="image">
+                                    <img src="image1/woman_s.jpg">
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li data-filter="children" class="list">
+                            <div class="box">
+                                <a href="#">
+                                <div class="name">
+                                    <a href="#">children</a>
+                                </div>
+                                <div class="image">
+                                    <img src="image1/kid_s.jpg">
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li data-filter="sport" class="list">
+                            <div class="box">
+                                <a href="#">
+                                <div class="name">
+                                    <a href="#">sport</a>
+                                </div>
+                                <div class="image">
+                                    <img src="image1/sport_s.jpg">
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <!-- heading end -->
+            <div class="container_content">
+                <div class="box_container back-lkh " data-category="">
+                    <div class="image">
+                        <img src="image1/sport1.png">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>sport</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image">
+                        <img src="image1/woman1.png">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>woman</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image">
+                        <img src="image1/sundle3.png">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>sundle</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image">
+                        <img src="image1/sport2 (2).png">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>sport</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image">
+                        <img src="image1/children3.png">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>children</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image">
+                        <img src="image1/sundle4.png">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>sundle</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image">
+                        <img src="image1/woman2.png">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>woman</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image">
+                        <img src="image1/man1.png">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>man</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image">
+                        <img src="image1/children1 (1).png">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>children</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image">
+                        <img src="image1/sport3.png">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>sport</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image">
+                        <img src="image1/woman3.png">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>woman</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image">
+                        <img src="image1/man2 (2).png">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>man</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image">
+                        <img src="image1/children4.png">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>children</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image">
+                        <img src="image1/sundle1.png">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>sundle</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image">
+                        <img src="image1/sport4.png">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>sport</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image">
+                        <img src="image1/woman4.png">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>woman</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image">
+                        <img src="image1/man3.png">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>man</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image">
+                        <img src="image1/children2.png">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>children</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image">
+                        <img src="image1/sundle2.png">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>sundle</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+                <div class="box_container back-lkh" data-category="">
+                    <div class="image">
+                        <img src="image1/man4.png">
+                    </div>
+                    <div class="details">
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <strong>man</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                        <h3>45.6$</h3>
+                        <button>buy now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- content end  -->
+    </section>
+    <footer class="back-lkh">
+        <div class="container">
+        <div class="box">
+           <h3>home</h3>
+           <ul>
+               <li><a href="#cate">category</a></li>
+               <li><a href="contact.html">contact us</a></li>
+               <li><a href="#blogs">blogs</a></li>
+               <li><a href="card.html">account</a></li>
+           </ul>
+       </div>
+       <div class="box">
+           <h3>category</h3>
+           <ul>
+               <li><a href="demo4.html" target="_blank">man_wear</a></li>
+               <li><a href="demo8.html" target="_blank">woman_wear</a></li>
+               <li><a href="demo10.html" target="_blank">kid_wear</a></li>
+               <li><a href="demo7.html" target="_blank">accessories</a></li>
+               <li><a href="demo1.html" target="_blank">shoeses</a></li>
+               <li><a href="demo3.html" target="_blank">furniture</a></li>
+               <li><a href="demo11.html" target="_blank">labtops</a></li>
+               <li><a href="demo12.html" target="_blank">mobiles</a></li>
+               <li><a href="demo2.html" target="_blank">books</a></li>
+               <li><a href="demo9.html" target="_blank">Appliances</a></li>
+               <li><a href="demo6.html" target="_blank">kitchen-tools</a></li>
+               <li><a href="demo5.html" target="_blank">Detergents</a></li>
+           </ul>
+       </div>
+       <div class="box">
+           <h3>contact us</h3>
+           <ul>
+               <li><a href="contact.html"><i class="fa-solid fa-phone"></i>support</a></li>
+               <li><a href="contact.html"><i class="fa-solid fa-pen-to-square"></i>feedback</a></li>
+               <li><a href="contact.html"><i class="fa-solid fa-location-dot"></i>address</a></li>
+               
+           </ul>
+       </div>
+       <div class="box">
+           <h3>account</h3>
+           <ul>
+               <li><a href="card.html"><i class="fa-regular fa-heart"></i>wishlist</a></li>
+               <li><a href="card.html"><i class="fa-solid fa-cart-shopping"></i>orders</a></li>
+           </ul>
+       </div>
+       <div class="icons">
+           <h4>contact us with...</h4>
+           <div class="brands">
+           <i class="fa-brands fa-facebook"></i>
+           <i class="fa-brands fa-whatsapp"></i>
+           <i class="fa-brands fa-twitter"></i>
+           <i class="fa-brands fa-telegram"></i>
+       </div>
+       <h5>Example@example.com</h5>
+       <h5 style="text-decoration:underline;color:blue;">+20023040559</h5>
+   </div>
+</div>
+</footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="js/demo.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+.contact {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color:#d1ffff8c
+  }
+  h1{
+      text-align: center;
+      color:#054F59;
+  }
+  p{
+  font-size:30px;
+   color:#084187;
+  }
+  .contact .content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contact .content form{
+      flex-basis:70%;
+      text-align:center;
+    }
+    .contact .content form .main-input{
+        padding: 20px;
+    display: block;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .contact .content form .main-input:focus{
+    outline: none;
+}
+.contact .content form textarea.main-input {
+    height: 200px;
+  }
+  .contact .content form input[type="submit"] {
+      background-color: var(--main-color);
+    color: white;
+    padding: 20px;
+    border: none;
+    display: flex;
+    margin-left: auto;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .contact .content .info {
+    flex-basis: 25%;
+  }
+  .contact .content .info h4 {
+      text-transform: uppercase;
+      margin-bottom: 40px;
+      font-weight: 500;
+      font-size:20px;
+}
+.contact .content .info .phone {
+    display: block;
+    color: #777;
+    margin-bottom: 40px;
+}
+.contact .content .info h4:nth-of-type(2) {
+    margin-top: 90px;
+}
+.contact .content .info address {
+    color: #777;
+    line-height: 2;
+}
+.contact .content form .btn{
+    font-size: 20px; padding:.6rem 1rem;
+    background-image: linear-gradient(to right,rgb(80, 80, 158),rgb(37, 37, 154));
+    border-radius: 12px;
+    margin:0 auto;
+}
+.map{
+
+    width:55rem;
+    height:25rem;
+    padding:1rem;
+    margin:.5rem;
+    background-color: #b0eaffc2;
+    border-radius:8px;
+}
+@media (max-width: 767px) {
+    .contact .content {
+        flex-direction: column;
+    }
+}
+@media (max-width: 767px){
+    .contact .content .info {
+        order: -1;
+        text-align: center;
+    }
+}
+@media (max-width: 767px){
+    .contact .content .info h4:nth-of-type(2) {
+        margin-top: 30px;
+    }
+}
+@media (max-width: 767px) {
+    .contact .content .info address {
+        margin-bottom: 40px;
+    }
+}
